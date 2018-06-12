@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="82.0" prefWidth="653.0" style="-fx-background-color: #489edb;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="16.0" text="Login" textFill="#f8f6f6">
+               <font>
+                  <Font name="Corbel" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="60.0" prefWidth="614.0" style="-fx-background-color: #cedeea;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="472.0" layoutY="14.0" prefHeight="32.0" prefWidth="128.0" ripplerFill="#ae5e5e" style="-fx-background-color: #7592d6; -fx-background-radius: 8,7,6;" text="Submit" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></JFXButton>
+            <JFXButton layoutX="294.0" layoutY="14.0" prefHeight="32.0" prefWidth="128.0" ripplerFill="#ae5e5e" style="-fx-background-radius: 8,7,6; -fx-background-color: #7592d6;" text="Register" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="165.0" />
+         </children></AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField layoutX="244.0" layoutY="81.0" prefHeight="26.0" prefWidth="300.0" promptText="Username" AnchorPane.leftAnchor="244.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font></JFXTextField>
+            <JFXPasswordField layoutX="244.0" layoutY="134.0" prefHeight="26.0" prefWidth="300.0" promptText="Password" AnchorPane.leftAnchor="244.0" />
+            <ImageView fitHeight="160.0" fitWidth="184.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
